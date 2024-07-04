@@ -1,0 +1,45 @@
+connect_hw_server -url 192.168.189.16:3121 -allow_non_jtag
+
+open_hw_target {192.168.189.16:3121/xilinx_tcf/Xilinx/21770202700VA}
+current_hw_device [get_hw_devices xcu280_u55c_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcu280_u55c_0] 0]
+set_property PROBES.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.ltx} [get_hw_devices xcu280_u55c_0]
+set_property FULL_PROBES.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.ltx} [get_hw_devices xcu280_u55c_0]
+set_property PROGRAM.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.bit} [get_hw_devices xcu280_u55c_0]
+program_hw_devices [get_hw_devices xcu280_u55c_0]
+refresh_hw_device [lindex [get_hw_devices xcu280_u55c_0] 0]
+close_hw_target {192.168.189.16:3121/xilinx_tcf/Xilinx/21770202700VA}
+    
+
+open_hw_target {192.168.189.16:3121/xilinx_tcf/Xilinx/21770205K022A}
+current_hw_device [get_hw_devices xcu280_u55c_0_3]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcu280_u55c_0_3] 0]
+set_property PROBES.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.ltx} [get_hw_devices xcu280_u55c_0_3]
+set_property FULL_PROBES.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.ltx} [get_hw_devices xcu280_u55c_0_3]
+set_property PROGRAM.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.bit} [get_hw_devices xcu280_u55c_0_3]
+program_hw_devices [get_hw_devices xcu280_u55c_0_3]
+refresh_hw_device [lindex [get_hw_devices xcu280_u55c_0_3] 0]
+close_hw_target {192.168.189.16:3121/xilinx_tcf/Xilinx/21770205K022A}
+    
+
+open_hw_target {192.168.189.16:3121/xilinx_tcf/Xilinx/21770205K02JA}
+current_hw_device [get_hw_devices xcu280_u55c_0_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcu280_u55c_0_1] 0]
+set_property PROBES.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.ltx} [get_hw_devices xcu280_u55c_0_1]
+set_property FULL_PROBES.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.ltx} [get_hw_devices xcu280_u55c_0_1]
+set_property PROGRAM.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.bit} [get_hw_devices xcu280_u55c_0_1]
+program_hw_devices [get_hw_devices xcu280_u55c_0_1]
+refresh_hw_device [lindex [get_hw_devices xcu280_u55c_0_1] 0]
+close_hw_target {192.168.189.16:3121/xilinx_tcf/Xilinx/21770205K02JA}
+    
+
+open_hw_target {192.168.189.16:3121/xilinx_tcf/Xilinx/21770205K01EA}
+current_hw_device [get_hw_devices xcu280_u55c_0_4]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xcu280_u55c_0_4] 0]
+set_property PROBES.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.ltx} [get_hw_devices xcu280_u55c_0_4]
+set_property FULL_PROBES.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.ltx} [get_hw_devices xcu280_u55c_0_4]
+set_property PROGRAM.FILE {/home/amax/hhj/p4nic_new/p4nic_new.runs/impl_1/WorkerNICTop.bit} [get_hw_devices xcu280_u55c_0_4]
+program_hw_devices [get_hw_devices xcu280_u55c_0_4]
+refresh_hw_device [lindex [get_hw_devices xcu280_u55c_0_4] 0]
+close_hw_target {192.168.189.16:3121/xilinx_tcf/Xilinx/21770205K01EA}
+    
